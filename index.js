@@ -48,7 +48,7 @@ inquirer.prompt ([
       {
         type: 'list',
         message: 'What type of license should your project have?',
-        choices: ['MIT', 'GNU', 'Apache 2.0', 'ISC'],
+        choices: ['MIT', 'GNU', 'Apache 2.0', 'BSD'],
         name: 'license',
         default: 0,
         validate: licenseInput => {

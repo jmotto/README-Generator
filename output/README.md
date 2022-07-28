@@ -1,8 +1,10 @@
 
- # lkj
+![MITLicense](https://img.shields.io/static/v1?label=MIT&message=license&color=success)
+
+ # README Generator
 
   ## Description
-  lk
+  This application generates a well detailed README file for your project. 
 
   ## Table of Contents
   * [Installation](#installation)
@@ -13,21 +15,21 @@
   * [Questions](#questions)
 
   ## Installation
-  klj
+  node.js
 
   ## Usage
-  kj
+  Run with Node.js in the command-line and answer the questions prompted.
 
   ## License
   This application is licensed under MIT
 
   ## Contributors
-  lkj
+  
 
   ## Tests 
-  kl
+  
 
   ## Questions
-  If you have any questions about this project, please contact lkj. To view more of my projects, go to lkj.
+  If you have any questions about this project, please contact jmotto31@gmail.com. To view more of my projects, go to jmotto.
 
 
