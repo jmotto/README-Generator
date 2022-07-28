@@ -6,18 +6,34 @@ const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 
 // // TODO: Create an array of questions for user input
-
+const questions = () => {
 inquirer.prompt ([
       {
         type: 'input',
         message: 'What is the name of your project?',
         name: 'title',
+        validate: titleInput => {
+          if (titleInput) {
+            return true;
+          } else {
+            console.log('Please provide a title for your project');
+            return false;
+          }
+        }
   
       },
       {
         type: 'input',
         message: 'Please write a short description of your project.',
         name: 'description',
+        validate: descriptionInput => {
+          if (descriptionInput) {
+            return true;
+          } else {
+            console.log('Please provide a description for your project');
+            return false;
+          }
+        }
       },
       {
         type: 'input',
@@ -30,9 +46,19 @@ inquirer.prompt ([
         name: 'usage',
       },
       {
-        type: 'input',
+        type: 'list',
         message: 'What type of license should your project have?',
+        choices: ['MIT', 'GNU', 'Apache 2.0', 'ISC'],
         name: 'license',
+        default: 0,
+        validate: licenseInput => {
+          if (licenseInput) {
+            return true;
+          } else {
+            console.log('Please select a license.');
+            return false;
+          }
+        }
       },
       {
         type: 'input',
@@ -60,13 +86,15 @@ inquirer.prompt ([
     .then((answers) => {
         console.log(answers);
         const readmeData = generateMarkdown(answers);
-        fs.writeFile('README.md', readmeData, (err) => err ? console.error(err) : console.log("Your README has been successfully created."));
+        fs.writeFile('./output/README.md', readmeData, (err) => err ? console.error(err) : console.log("Your README has been successfully created."));
     })
+  }
 
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  questions()
+}
 
 // Function call to initialize app
 init();
-
