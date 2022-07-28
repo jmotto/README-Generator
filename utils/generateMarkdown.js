@@ -1,3 +1,5 @@
+module.exports = {generateMarkdown};
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 const renderLicenseBadge = (data) => {
   return `
@@ -65,4 +67,4 @@ const generateMarkdown = data => {
 
 
 
-module.exports = generateMarkdown;
+;
