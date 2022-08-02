@@ -1,11 +1,11 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
 
 // linking to generator page
 const generateMarkdown = require('./utils/generateMarkdown');
 
-// // TODO: Create an array of questions for user input
+// Array of questions for user input
 const questions = () => {
 inquirer.prompt ([
       {
@@ -52,14 +52,7 @@ inquirer.prompt ([
         choices: ['MIT', 'GNU', 'Apache2.0', 'BSD'],
         name: 'license',
         default: 0,
-        // validate: licenseInput => {
-          // if (licenseInput) {
-            // return true;
-          // } else {
-            // console.log('Please select a license.');
-            // return false;
-          // }
-        // }
+      
       },
       {
         type: 'input',
@@ -84,7 +77,7 @@ inquirer.prompt ([
       },
       
     ])
-    // TODO: Create a function to write README file
+    // Function to write README file
     .then((answers) => {
         console.log(answers);
         const readmeData = generateMarkdown(answers);
@@ -93,7 +86,7 @@ inquirer.prompt ([
   }
 
 
-// TODO: Create a function to initialize app
+// Function to initialize app
 function init() {
   questions()
 }
