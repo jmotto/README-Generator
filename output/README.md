@@ -1,10 +1,10 @@
 
 ![MITLicense](https://img.shields.io/static/v1?label=MIT&message=license&color=success)
 
- # readme 
+ # reademe
 
   ## Description
-  create a readme
+  readme
 
   ## Table of Contents
   * [Installation](#installation)
@@ -18,25 +18,19 @@
   npm install
 
   ## Usage
-  run in command line
+  node
 
   ## License
-  This application is licensed under [MIT](function renderLicenseLink(license){
-    if (license === 'MIT') return `License Badge ![${license} License](https://opensource.org/licenses/MIT)`;
-    if (license === 'GNU') return `License Badge ![${data.license} License](https://opensource.org/licenses/GPL-2.0)`;
-    if (license === 'Apache2.0') return `License Badge ![${data.license} License](https://opensource.org/licenses/Apache-2.0)`;
-    if (license === 'BSD') return `License Badge ![${data.license} License](https://opensource.org/licenses/BSD-3-Clause)`;
-    return "";
-  }). 
+  This application is licensed under ![MIT](License Badge ![BSD License](https://opensource.org/licenses/BSD-3-Clause)). 
 
 
   ## Contributors
-  jamie otto
+  jamie
 
   ## Tests 
   npm test
 
   ## Questions
-  If you have any questions about this project, please contact [jmotto31@gmail.com](mailto:jmotto31@gmail.com). To view more of my projects, go to [jmotto](https://github.com/jmotto).
+  If you have any questions about this project, please contact [jmotto](mailto:jmotto). To view more of my projects, go to [jmott](https://github.com/jmott).
 
 
