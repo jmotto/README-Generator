@@ -1,10 +1,10 @@
 
 ![MITLicense](https://img.shields.io/static/v1?label=MIT&message=license&color=success)
 
- # README Generator
+ # readme
 
   ## Description
-  Create a detailed README file for your project.
+  read
 
   ## Table of Contents
   * [Installation](#installation)
@@ -18,19 +18,19 @@
   npm install
 
   ## Usage
-  Run node index.js in the command-line and answer the prompted questions.
+  
 
   ## License
   This application is licensed under MIT. 
 
 
   ## Contributors
-  Jamie Otto
+  
 
   ## Tests 
   npm test
 
   ## Questions
-  If you have any questions about this project, please contact [jmotto31@gmail.com](mailto:jmotto31@gmail.com). To view more of my projects, go to [jmotto](https://github.com/jmotto).
+  If you have any questions about this project, please contact [](mailto:). To view more of my projects, go to [](https://github.com/).
 
 
