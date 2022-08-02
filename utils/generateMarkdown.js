@@ -44,7 +44,7 @@ const generateMarkdown = data =>
   ${data.usage}
 
   ## License
-  This application is licensed under ${data.license}. 
+  This application is licensed under [${data.license}](${renderLicenseLink}). 
 
 
   ## Contributors

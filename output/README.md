@@ -1,10 +1,10 @@
 
 ![MITLicense](https://img.shields.io/static/v1?label=MIT&message=license&color=success)
 
- # README Generator
+ # readme 
 
   ## Description
-  Create a detailed README.md for your project.
+  create a readme
 
   ## Table of Contents
   * [Installation](#installation)
@@ -18,14 +18,20 @@
   npm install
 
   ## Usage
-  Run node index.js in the command-line and answer the prompted questions.
+  run in command line
 
   ## License
-  This application is licensed under MIT. 
+  This application is licensed under [MIT](function renderLicenseLink(license){
+    if (license === 'MIT') return `License Badge ![${license} License](https://opensource.org/licenses/MIT)`;
+    if (license === 'GNU') return `License Badge ![${data.license} License](https://opensource.org/licenses/GPL-2.0)`;
+    if (license === 'Apache2.0') return `License Badge ![${data.license} License](https://opensource.org/licenses/Apache-2.0)`;
+    if (license === 'BSD') return `License Badge ![${data.license} License](https://opensource.org/licenses/BSD-3-Clause)`;
+    return "";
+  }). 
 
 
   ## Contributors
-  Jamie Otto
+  jamie otto
 
   ## Tests 
   npm test
