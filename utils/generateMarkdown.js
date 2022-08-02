@@ -1,8 +1,10 @@
 
 // Function that returns a license badge based on which license is passed in
+const license = ("MIT", "GNU", "Apache2.0", "BSD");
+// const license = `${data.license}`;
 function renderLicenseBadge(license){
   if (license){
-    return `License Badge ![${data.license} License](https://img.shields.io/static/v1?label=${data.license}&message=license&color=success)`
+    return `License Badge ![${license} License](https://img.shields.io/static/v1?label=${data.license}&message=license&color=success)`
   } else {
     return ""
   }
@@ -16,6 +18,7 @@ function renderLicenseBadge(license){
     return "";
   }
   
+
   
 
 // Function to generate markdown for README
@@ -44,7 +47,7 @@ const generateMarkdown = data =>
   ${data.usage}
 
   ## License
-  This application is licensed under [${data.license}](${renderLicenseLink}). 
+  This application is licensed under ![${data.license}](${renderLicenseLink(license)}). 
 
 
   ## Contributors
