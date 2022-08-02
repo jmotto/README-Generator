@@ -9,7 +9,7 @@ function renderLicenseBadge(license){
   }
 
   function renderLicenseLink(license){
-    if (license === 'MIT') return `License Badge ![${license} License](https://opensource.org/licenses/MIT)`;
+    if (license === 'MIT') return `License Badge ![${data.license} License](https://opensource.org/licenses/MIT)`;
     if (license === 'GNU') return `License Badge ![${data.license} License](https://opensource.org/licenses/GPL-2.0)`;
     if (license === 'Apache2.0') return `License Badge ![${data.license} License](https://opensource.org/licenses/Apache-2.0)`;
     if (license === 'BSD') return `License Badge ![${data.license} License](https://opensource.org/licenses/BSD-3-Clause)`;
