@@ -4,7 +4,7 @@
  # README Generator
 
   ## Description
-  Create a detailed README file for your project.
+  Create a detailed README.md for your project.
 
   ## Table of Contents
   * [Installation](#installation)
@@ -20,8 +20,6 @@
   ## Usage
   Run node index.js in the command-line and answer the prompted questions.
 
-  [Demo](https://drive.google.com/file/d/1Fh6HO0PMrzsy4KtbIq2ZWyXEWRJIxfU0/view)
-
   ## License
   This application is licensed under MIT. 
 
@@ -34,3 +32,5 @@
 
   ## Questions
   If you have any questions about this project, please contact [jmotto31@gmail.com](mailto:jmotto31@gmail.com). To view more of my projects, go to [jmotto](https://github.com/jmotto).
+
+
