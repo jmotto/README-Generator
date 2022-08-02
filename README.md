@@ -4,7 +4,7 @@
  # README Generator
 
   ## Description
-  This application generates a well detailed README file for your project. 
+  Create a detailed README file for your project.
 
   ## Table of Contents
   * [Installation](#installation)
@@ -15,18 +15,20 @@
   * [Questions](#questions)
 
   ## Installation
-  node.js
+  npm install
 
   ## Usage
-  Run with Node.js in the command-line and answer the questions prompted.
+  Run node index.js in the command-line and answer the prompted questions.
 
   ## License
-  This application is licensed under MIT
+  This application is licensed under MIT. 
+
+
+  ## Contributors
+  Jamie Otto
+
+  ## Tests 
+  npm test
 
   ## Questions
-  <!-- add links to email and github -->
-  If you have any questions about this project, please contact jmotto31@gmail.com. To view more of my projects, go to jmotto.
-
-
-
- 
+  If you have any questions about this project, please contact [jmotto31@gmail.com](mailto:jmotto31@gmail.com). To view more of my projects, go to [jmotto](https://github.com/jmotto).

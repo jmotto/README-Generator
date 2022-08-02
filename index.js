@@ -39,6 +39,7 @@ inquirer.prompt ([
         type: 'input',
         message: 'What command should be run to install dependencies?',
         name: 'installation',
+        default: 'npm install'
       },
       {
         type: 'input',
@@ -48,17 +49,17 @@ inquirer.prompt ([
       {
         type: 'list',
         message: 'What type of license should your project have?',
-        choices: ['MIT', 'GNU', 'Apache 2.0', 'BSD'],
+        choices: ['MIT', 'GNU', 'Apache2.0', 'BSD'],
         name: 'license',
         default: 0,
-        validate: licenseInput => {
-          if (licenseInput) {
-            return true;
-          } else {
-            console.log('Please select a license.');
-            return false;
-          }
-        }
+        // validate: licenseInput => {
+          // if (licenseInput) {
+            // return true;
+          // } else {
+            // console.log('Please select a license.');
+            // return false;
+          // }
+        // }
       },
       {
         type: 'input',
@@ -69,6 +70,7 @@ inquirer.prompt ([
         type: 'input',
         message: 'How do you run tests?',
         name: 'tests',
+        default: 'npm test'
       },
       {
         type: 'input',

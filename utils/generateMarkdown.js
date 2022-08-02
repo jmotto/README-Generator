@@ -1,5 +1,5 @@
 
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Function that returns a license badge based on which license is passed in
 function renderLicenseBadge(license){
   if (license){
     return `License Badge ![${data.license} License](https://img.shields.io/static/v1?label=${data.license}&message=license&color=success)`
@@ -8,8 +8,17 @@ function renderLicenseBadge(license){
   }
   }
 
+  function renderLicenseLink(license){
+    if (license === 'MIT') return `License Badge ![${data.license} License](https://opensource.org/licenses/MIT)`;
+    if (license === 'GNU') return `License Badge ![${data.license} License](https://opensource.org/licenses/GPL-2.0)`;
+    if (license === 'Apache2.0') return `License Badge ![${data.license} License](https://opensource.org/licenses/Apache-2.0)`;
+    if (license === 'BSD') return `License Badge ![${data.license} License](https://opensource.org/licenses/BSD-3-Clause)`;
+    return "";
+  }
+  
 
-// TODO: Create a function to generate markdown for README
+
+// Function to generate markdown for README
 const generateMarkdown = data => 
 
 `
@@ -35,7 +44,8 @@ const generateMarkdown = data =>
   ${data.usage}
 
   ## License
-  This application is licensed under ${data.license}
+  This application is licensed under ${data.license}. 
+
 
   ## Contributors
   ${data.contributors}
@@ -44,7 +54,7 @@ const generateMarkdown = data =>
   ${data.tests}
 
   ## Questions
-  If you have any questions about this project, please contact ${data.userEmail}. To view more of my projects, go to ${data.github}.
+  If you have any questions about this project, please contact [${data.userEmail}](mailto:${data.userEmail}). To view more of my projects, go to [${data.github}](https://github.com/${data.github}).
 
 
 `;
