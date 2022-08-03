@@ -1,10 +1,10 @@
 
 ![MITLicense](https://img.shields.io/static/v1?label=MIT&message=license&color=success)
 
- # reademe
+ # jamie
 
   ## Description
-  readme
+  jaime
 
   ## Table of Contents
   * [Installation](#installation)
@@ -18,10 +18,10 @@
   npm install
 
   ## Usage
-  node
+  jamie
 
   ## License
-  This application is licensed under ![MIT](License Badge ![BSD License](https://opensource.org/licenses/BSD-3-Clause)). 
+  This application is licensed under [MIT]((https://opensource.org/licenses/MIT)). 
 
 
   ## Contributors
@@ -31,6 +31,6 @@
   npm test
 
   ## Questions
-  If you have any questions about this project, please contact [jmotto](mailto:jmotto). To view more of my projects, go to [jmott](https://github.com/jmott).
+  If you have any questions about this project, please contact [jmotto](mailto:jmotto). To view more of my projects, go to [jmotto](https://github.com/jmotto).
 
 

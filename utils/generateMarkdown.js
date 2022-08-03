@@ -1,23 +1,20 @@
 
 // Function that returns a license badge based on which license is passed in
-const license = ("MIT", "GNU", "Apache2.0", "BSD");
-// const license = `${data.license}`;
-// function renderLicenseBadge(license){
-//   if (license){
-//     return `License Badge ![${license} License](https://img.shields.io/static/v1?label=${data.license}&message=license&color=success)`
-//   } else {
-//     return ""
-//   }
-//   }
+function renderLicenseBadge(license){
+  if (license){
+    return `License Badge ![${license} License](https://img.shields.io/static/v1?label=${data.license}&message=license&color=success)`
+  } else {
+    return ""
+  }
+  }
 
-  function renderLicenseLink(){
-    if (license === 'MIT') return `License Badge ![${license} License](https://opensource.org/licenses/MIT)`;
-    if (license === 'GNU') return `License Badge ![${license} License](https://opensource.org/licenses/GPL-2.0)`;
-    if (license === 'Apache2.0') return `License Badge ![${license} License](https://opensource.org/licenses/Apache-2.0)`;
-    if (license === 'BSD') return `License Badge ![${license} License](https://opensource.org/licenses/BSD-3-Clause)`;
+  function renderLicenseLink(license){
+    if (license === 'MIT') return `(https://opensource.org/licenses/MIT)`;
+    if (license === 'GNU') return `(https://opensource.org/licenses/GPL-2.0)`;
+    if (license === 'Apache2.0') return `(https://opensource.org/licenses/Apache-2.0)`;
+    if (license === 'BSD') return `(https://opensource.org/licenses/BSD-3-Clause)`;
     return "";
   }
-  
 
 
 // Function to generate markdown for README
@@ -46,7 +43,7 @@ const generateMarkdown = data =>
   ${data.usage}
 
   ## License
-  This application is licensed under ![${data.license}](${renderLicenseLink(license)}). 
+  This application is licensed under [${data.license}](${renderLicenseLink(data.license)}). 
 
 
   ## Contributors
