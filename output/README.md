@@ -1,3 +1,4 @@
+
 ![MITLicense](https://img.shields.io/static/v1?label=MIT&message=license&color=success)
 
  # README Generator
@@ -17,11 +18,7 @@
   npm install
 
   ## Usage
-  Run `node.js`  in the command line and answer the prompted questions.
-    ![Command line prompts](./utils/Screen%20Shot%202022-08-03%20at%204.57.35%20PM.png)
-
-   [Demo](https://drive.google.com/file/d/1UQ45BWlm4lIuNc9YM9NniKrkhWz-GfZ3/view)
-  <br/><iframe src="https://drive.google.com/file/d/1UQ45BWlm4lIuNc9YM9NniKrkhWz-GfZ3/preview" width="640" height="480"></iframe>
+  Run node.js in the command line and answer the prompted questions.
 
   ## License
   This application is licensed under [MIT]((https://opensource.org/licenses/MIT)). 
@@ -42,5 +39,4 @@
 
   ## Questions
   If you have any questions about this project, please contact [jmotto31@gmail.com](mailto:jmotto31@gmail.com). To view more of my projects, go to [jmotto](https://github.com/jmotto).
-
 
